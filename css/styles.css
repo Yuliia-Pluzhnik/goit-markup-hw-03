@@ -201,7 +201,7 @@ ul {
     margin-left: auto;
     margin-right: auto;
     border-radius: 4px;
-    border-color: var(--accent-color);
+    border: 0;
 
 }
 
@@ -222,7 +222,7 @@ ul {
 }
 
 .main-page-item {
-    flex-basis: calc((100%-90px)/4);
+    flex-basis: calc((100% - 90px) / 4);
 }
 
 .main-item-title {
@@ -241,6 +241,9 @@ ul {
 
 /* Чим ми займаємось */
 
+.section.about {
+    padding-top: 0;
+}
 
 .title {
     font-weight: 700;
@@ -257,10 +260,16 @@ ul {
     border: 1px;
 }
 
+.list-image {
+    flex-basis: calc((100% - 60) / 3);
+}
+
 /* Наша команда */
 
 .about-comand-container {
-    background-color: var(--background-color-grey);
+    padding-top: 30px;
+    padding-bottom: 30px;
+
 }
 
 .about-comand {
@@ -275,39 +284,31 @@ ul {
 }
 
 .about-comand-items {
+
     background-color: var(--background-color-white);
-    border-left: 1px solid;
-    border-right: 1px solid;
-    border-bottom: 1px solid;
-    border-radius: 0px 0px 4px 4px;
-    border-color: var(--secondary-color-text-theme-white);
+    flex-basis: calc((100% - 90) / 4);
 }
 
 .about-comand-heading {
+    font-size: 16px;
     font-weight: 500;
     line-height: 1.19;
     color: var(--primary-color-text-theme-white);
-    margin-top: 30px;
     text-align: center;
+    margin-bottom: 10px;
 }
 
 .about-comand-text {
     line-height: 1.19;
-    padding-top: 10px;
-    padding-bottom: 30px;
     text-align: center;
 }
 
 /* Підвал */
 
-.footer-container {
-    background-color: var(--background-color);
-}
-
-.footer-contact {
-    background-color: var(--background-color);
+footer {
     padding-top: 60px;
     padding-bottom: 60px;
+    background-color: var(--background-color);
 }
 
 .footer-list {
@@ -340,6 +341,7 @@ ul {
     display: flex;
     justify-content: center;
     column-gap: 8px;
+    margin-bottom: 50px;
 }
 
 .portfolio-btn {
@@ -350,20 +352,33 @@ ul {
     color: #212121;
     padding: 6px 22px;
     border-radius: 4px;
-    border-color: #F5F4FA;
-    margin-bottom: 50px;
+    border: 0;
 }
 
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     gap: 30px;
     justify-content: center;
+}
 
+.portfolio-list-item {
+    flex-basis: calc((100% - 60) / 3);
+}
+
+.portfolio-img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 
 .item-cotnainer {
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     border-top: 0;
     border-left: 1px solid;
     border-right: 1px solid;
@@ -377,14 +392,11 @@ ul {
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--primary-color-text-theme-white);
-    padding-left: 24px;
-    padding-top: 20px;
+    margin-bottom: 4px;
 }
 
 .portfolio-list-text {
     line-height: 1.88;
-    padding-left: 24px;
-    padding-bottom: 20px;
 }
 
 .portfolio-btn:hover,
