@@ -51,6 +51,8 @@ button {
 
 .img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 h1,
@@ -166,10 +168,6 @@ ul {
 
 /* Головна сторінка */
 
-.hero {
-    background-color: tomato;
-}
-
 .main-page {
     background-color: var(--background-color);
     padding-top: 200px;
@@ -214,10 +212,13 @@ ul {
 
 /* Наші переваги */
 
+.main-page {
+    margin-bottom: 94px;
+}
+
 .main-page-list {
     display: flex;
     column-gap: 30px;
-    padding-top: 89px;
 }
 
 .main-page-item {
@@ -247,7 +248,7 @@ ul {
     line-height: 1.17;
     text-align: center;
     color: var(--primary-color-text-theme-white);
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 .about-list {
@@ -270,21 +271,31 @@ ul {
 .about-comand-list {
     display: flex;
     column-gap: 30px;
+    justify-content: center;
 }
 
 .about-comand-items {
     background-color: var(--background-color-white);
-    ;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    border-radius: 0px 0px 4px 4px;
+    border-color: var(--secondary-color-text-theme-white);
 }
 
 .about-comand-heading {
     font-weight: 500;
     line-height: 1.19;
     color: var(--primary-color-text-theme-white);
+    margin-top: 30px;
+    text-align: center;
 }
 
 .about-comand-text {
     line-height: 1.19;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    text-align: center;
 }
 
 /* Підвал */
@@ -293,18 +304,17 @@ ul {
     background-color: var(--background-color);
 }
 
-
 .footer-contact {
     background-color: var(--background-color);
-    padding-top: 32px;
+    padding-top: 60px;
     padding-bottom: 60px;
 }
 
 .footer-list {
-    padding-top: 20px;
+    margin-top: 20px;
 }
 
-.footer-list-item:not(last-child) {
+.footer-list-item:not(:last-child) {
     margin-bottom: 9px;
 }
 
@@ -324,20 +334,12 @@ ul {
     color: var(--secondary-color-text-theme-dark);
 }
 
-
-
-
-
-
-
 /* Портфоліо */
 
 .portfolio-buttons-list {
     display: flex;
     justify-content: center;
     column-gap: 8px;
-    padding-top: 94px;
-    margin-bottom: 50px;
 }
 
 .portfolio-btn {
@@ -346,11 +348,27 @@ ul {
     line-height: 26px;
     text-align: center;
     color: #212121;
-    padding-left: 22px;
-    padding-right: 22px;
+    padding: 6px 22px;
     border-radius: 4px;
     border-color: #F5F4FA;
-    ;
+    margin-bottom: 50px;
+}
+
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+
+}
+
+
+.item-cotnainer {
+    border-top: 0;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    border-color: #EEEEEE;
 }
 
 .portfolio-list-title {
@@ -359,10 +377,14 @@ ul {
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--primary-color-text-theme-white);
+    padding-left: 24px;
+    padding-top: 20px;
 }
 
 .portfolio-list-text {
     line-height: 1.88;
+    padding-left: 24px;
+    padding-bottom: 20px;
 }
 
 .portfolio-btn:hover,
