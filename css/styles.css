@@ -212,10 +212,6 @@ ul {
 
 /* Наші переваги */
 
-.main-page {
-    margin-bottom: 94px;
-}
-
 .main-page-list {
     display: flex;
     column-gap: 30px;
@@ -225,18 +221,23 @@ ul {
     flex-basis: calc((100% - 90px) / 4);
 }
 
+.about-image {
+    display: block;
+    max-width: 100%;
+}
+
 .main-item-title {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
-    color: var(--primary-color-text-theme-white)
+    color: var(--primary-color-text-theme-white);
+    margin-bottom: 10px;
 }
 
 .text-main-page {
     font-size: 14px;
     line-height: 1.71;
-    padding-top: 10px;
 }
 
 /* Чим ми займаємось */
@@ -261,7 +262,7 @@ ul {
 }
 
 .list-image {
-    flex-basis: calc((100% - 60) / 3);
+    flex-basis: calc((100% - 60px) / 3);
 }
 
 /* Наша команда */
@@ -286,7 +287,14 @@ ul {
 .about-comand-items {
 
     background-color: var(--background-color-white);
-    flex-basis: calc((100% - 90) / 4);
+    flex-basis: calc((100% - 90px) / 4);
+    border-radius: 0px 0px 4px 4px;
+
+}
+
+.about-comand-image {
+    display: block;
+    max-width: 100%;
 }
 
 .about-comand-heading {
@@ -364,7 +372,7 @@ footer {
 }
 
 .portfolio-list-item {
-    flex-basis: calc((100% - 60) / 3);
+    flex-basis: calc((100% - 60px) / 3);
 }
 
 .portfolio-img {
